@@ -2,7 +2,7 @@
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="域名绑定">
-<meta name="keywords" content="无限流量, 免费VPN"><title>ProtonVPN：无限流量的VPN</title>
+<meta name="keywords" content="githubpages, hugo"><title>hugo &#43;githubpages 绑定域名</title>
 
 <link rel='canonical' href='https://orange-blog.github.io/p/20230101/'>
 
@@ -10,7 +10,7 @@
 <meta property='og:description' content="域名绑定">
 <meta property='og:url' content='https://orange-blog.github.io/p/20230101/'>
 <meta property='og:site_name' content='51seagoing'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='科学上网' /><meta property='article:tag' content='免费流量' /><meta property='article:published_time' content='2023-01-01T10:46:11&#43;08:00'/><meta property='article:modified_time' content='2023-01-01T10:46:11&#43;08:00'/><meta property='og:image' content='https://picsum.photos/800/600.webp?random=6b63f77d' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='域名绑定' /><meta property='article:tag' content='cloudflare' /><meta property='article:published_time' content='2023-01-01T10:46:11&#43;08:00'/><meta property='article:modified_time' content='2023-01-01T10:46:11&#43;08:00'/><meta property='og:image' content='https://picsum.photos/800/600.webp?random=6b63f77d' />
 <meta name="twitter:title" content="hugo +githubpages 绑定域名">
 <meta name="twitter:description" content="域名绑定"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://picsum.photos/800/600.webp?random=6b63f77d' />
@@ -273,7 +273,56 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#如何在不同域名注册商如-namecheapgodaddy上配置-dns-解析以指向-github-pages">如何在不同域名注册商（如 Namecheap、GoDaddy）上配置 DNS 解析以指向 GitHub Pages？</a></li>
+          </ol>
+        </li>
+        <li><a href="#在-namecheap-上配置-dns-解析">在 Namecheap 上配置 DNS 解析</a></li>
+        <li><a href="#在-godaddy-上配置-dns-解析">在 GoDaddy 上配置 DNS 解析</a></li>
+        <li><a href="#在-github-上配置自定义域名">在 GitHub 上配置自定义域名</a>
+          <ol>
+            <li><a href="#github-pages-自定义域名设置的详细步骤是什么">GitHub Pages 自定义域名设置的详细步骤是什么？</a></li>
+            <li><a href="#在-hugo-博客项目中创建和管理-cname-文件的最佳实践是什么">在 Hugo 博客项目中创建和管理 CNAME 文件的最佳实践是什么？</a></li>
+            <li><a href="#如何验证自定义域名与-github-pages-的绑定是否成功">如何验证自定义域名与 GitHub Pages 的绑定是否成功？</a></li>
+            <li><a href="#如果遇到-dns-解析延迟或绑定失败应如何诊断和解决">如果遇到 DNS 解析延迟或绑定失败，应如何诊断和解决？</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="has-image main-article">
@@ -281,7 +330,7 @@
         <div class="article-image">
             <a href="/p/20230101/">
                 
-                    <img src="https://picsum.photos/800/600.webp?random=6b63f77d" loading="lazy" alt="Featured image of post ProtonVPN：无限流量的VPN" />
+                    <img src="https://picsum.photos/800/600.webp?random=6b63f77d" loading="lazy" alt="Featured image of post hugo &#43;githubpages 绑定域名" />
                 
             </a>
         </div>
@@ -356,143 +405,148 @@
     <section class="article-content">
     
     
-    <h1 id="protonvpn无限流量的vpn">ProtonVPN：无限流量的VPN
+    <h1 id="hugo-githubpages-绑定域名">hugo +githubpages 绑定域名
 </h1><p>​</p>
-<p>​	protonVPN 是一款由 Proton AG 开发的虚拟专用网络 (VPN) 软件。ProtonVPN 的设计初衷是为了保护用户的隐私和安全，同时保持互联网自由。</p>
-<p>特色功能</p>
+<p>​	要在使用 Hugo 和 GitHub Pages 构建的个人博客上绑定自定义域名，可以按照以下步骤进行操作：</p>
+<ol>
+<li><strong>注册域名</strong>：首先，你需要在域名注册商（如 Namecheap 或 GoDaddy）上注册一个域名。例如，如果你选择的是 Namecheap，可以在其网站上完成域名的购买。</li>
+<li><strong>配置 DNS 解析</strong>：在域名注册商的管理面板中，配置 DNS 解析，将域名指向你的 GitHub Pages 地址。通常，你需要添加一条 CNAME 记录，主机记录的值为你的域名，记录值为你的 GitHub Pages 地址（如 <code>yourusername.github.io  </code>）。</li>
+<li><strong>在 GitHub 上设置自定义域名</strong>：进入你的 GitHub 仓库设置页面（<code>[https://github.com/yourusername/your-repo/settings/pages](https://github.com/yourusername/your-repo/settings/pages)  </code>），在“Custom domain”字段中输入你想要绑定的域名。GitHub 会自动为你创建一个 CNAME 文件，并将其内容添加到你的仓库中。</li>
+<li><strong>创建 CNAME 文件</strong>：在 Hugo 博客的根目录下的 <code>static</code> 文件夹中创建一个名为 <code>CNAME</code> 的文件，无后缀。文件内容写上你的自定义域名。这样可以确保每次自动化部署时不会丢失自定义域名的配置。</li>
+<li><strong>验证域名绑定</strong>：完成上述步骤后，等待 DNS 解析生效（通常需要几分钟到几小时）。然后，你可以通过访问你的自定义域名来验证是否成功绑定。如果一切正常，你应该能够看到你的 Hugo 博客内容。</li>
+</ol>
+<p>通过以上步骤，你就可以成功地将自定义域名绑定到使用 Hugo 和 GitHub Pages 构建的个人博客上。</p>
+<h4 id="如何在不同域名注册商如-namecheapgodaddy上配置-dns-解析以指向-github-pages">如何在不同域名注册商（如 Namecheap、GoDaddy）上配置 DNS 解析以指向 GitHub Pages？
+</h4><p>要在不同域名注册商（如 Namecheap、GoDaddy）上配置 DNS 解析以指向 GitHub Pages，可以按照以下步骤进行：</p>
+<h3 id="在-namecheap-上配置-dns-解析">在 Namecheap 上配置 DNS 解析
+</h3><ol>
+<li><strong>登录 Namecheap 账户</strong>：
 <ul>
-<li>网络锁定（Kill Switch）：如果 VPN 连接中断，网络锁定功能会自动断开互联网连接，确保用户的数据不会泄露。</li>
-<li>分流（Split Tunneling）：用户可以选择哪些应用程序通过 VPN 连接，哪些应用程序直接访问互联网。</li>
-<li>安全核心（Secure Core）：将用户的流量通过多个安全服务器进行传输，增加额外的隐私保护层。</li>
-<li>Tor over VPN：可以将用户的流量通过 Tor 网络传输，为用户提供额外的匿名性。</li>
-<li>多平台支持：支持 Windows、macOS、Linux、iOS 和 Android 平台。</li>
+<li>登录到你的 Namecheap 账户。</li>
 </ul>
-<p>价格和订阅</p>
+</li>
+<li><strong>管理域名</strong>：
 <ul>
-<li>
-<p>免费版本：提供有限的服务器选择和速度，但足够用于基本的隐私保护。</p>
-</li>
-<li>
-<p>付费版本：提供更多服务器选择、更高的速度、更强的隐私保护功能和其他高级功能。付费版本包括 Basic、Plus 和 Visionary 计划，价格和功能有所不同。</p>
-</li>
+<li>在左侧边栏中选择 &ldquo;Domain List&rdquo;，然后点击你域名旁的 &ldquo;Manage&rdquo; 按钮。</li>
 </ul>
-<p>其实，对于普通用户而言，免费版本的就已经足够了。下面，简单介绍一下ProtonVPN的安装，官方网址：https://protonvpn.com/<img src="/p/20230101/images/640.png"
-	width="1080"
-	height="340"
-	srcset="/p/20230101/images/640_hu5868178969566585636.png 480w, /p/20230101/images/640_hu12025365931300850432.png 1024w"
-	loading="lazy"
-	
-		alt="图片"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="317"
-		data-flex-basis="762px"
-	
-></p>
-<p>第一步，创建免费的账户</p>
-<p>点击网页右上角的“创建账户”，</p>
-<p><img src="/p/20230101/images/640-1729736303867-1.png"
-	width="1080"
-	height="72"
-	srcset="/p/20230101/images/640-1729736303867-1_hu2949957506452661429.png 480w, /p/20230101/images/640-1729736303867-1_hu8478799758250405447.png 1024w"
-	loading="lazy"
-	
-		alt="图片"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="1500"
-		data-flex-basis="3600px"
-	
-></p>
-<p>在网页的中下位置，找到“get Proton Free”这个按键，点击进去。当然，你有钱的话也可以支持一下开发商，毕竟薅多了也会秃的！</p>
-<p><img src="/p/20230101/images/640-1729736303867-2.png"
-	width="1080"
-	height="530"
-	srcset="/p/20230101/images/640-1729736303867-2_hu10135656684238284265.png 480w, /p/20230101/images/640-1729736303867-2_hu9395558935558208051.png 1024w"
-	loading="lazy"
-	
-		alt="图片"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="203"
-		data-flex-basis="489px"
-	
-></p>
-<p>一路free下去，不要犹豫！</p>
-<p><img src="/p/20230101/images/640-1729736303867-3.png"
-	width="584"
-	height="466"
-	srcset="/p/20230101/images/640-1729736303867-3_hu6869968435930535383.png 480w, /p/20230101/images/640-1729736303867-3_hu17462211474697189572.png 1024w"
-	loading="lazy"
-	
-		alt="图片"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="125"
-		data-flex-basis="300px"
-	
-></p>
-<p>然后，会弹出一个注册页面，按提示进行注册即可。输入你的邮箱（建议使用国外的邮箱）进行注册，点击开始使用。</p>
-<p><img src="/p/20230101/images/640-1729736303867-4.png"
-	width="1080"
-	height="556"
-	srcset="/p/20230101/images/640-1729736303867-4_hu13995399721872611498.png 480w, /p/20230101/images/640-1729736303867-4_hu7998912229760002494.png 1024w"
-	loading="lazy"
-	
-		alt="图片"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="194"
-		data-flex-basis="466px"
-	
-></p>
-<p>之后ProtonVPN会自动帮你创建账号及密码。你接下来要做的就是下载对应的客户端进行安装即可。安装好客户端之后，首次打开你会看到如下界面，然后输入之前邮箱和密码。<img src="/p/20230101/images/640-1729736303867-5.png"
-	width="670"
-	height="569"
-	srcset="/p/20230101/images/640-1729736303867-5_hu10584583662009133817.png 480w, /p/20230101/images/640-1729736303867-5_hu4051362040742060049.png 1024w"
-	loading="lazy"
-	
-		alt="图片"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="117"
-		data-flex-basis="282px"
-	
-></p>
-<p>登录进去之后，你就看到下面这个画面，提示“You are not protected!”。意思就是你没有连接VPN，那就点击下面的快速连接即可，剩下的就是等待软件自动连接到服务器，连接上去就会变成CONNECTED。<img src="/p/20230101/images/640-1729736303867-6.png"
-	width="1080"
-	height="317"
-	srcset="/p/20230101/images/640-1729736303867-6_hu18237638479962297900.png 480w, /p/20230101/images/640-1729736303867-6_hu793762613745289263.png 1024w"
-	loading="lazy"
-	
-		alt="图片"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="340"
-		data-flex-basis="817px"
-	
-></p>
-<p><img src="/p/20230101/images/640-1729736303867-7.png"
-	width="1073"
-	height="341"
-	srcset="/p/20230101/images/640-1729736303867-7_hu7214197501414266302.png 480w, /p/20230101/images/640-1729736303867-7_hu4893933282011968284.png 1024w"
-	loading="lazy"
-	
-		alt="图片"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="314"
-		data-flex-basis="755px"
-	
->唯一的缺点就是第一次连接需要外网环境，而且连接比较慢（需要5分钟左右)、第一次连接成功之后，以后就没有这个限制了。我试用了几个月，速度还行，最关键的是免费流量！爱学习的童靴不能错过！</p>
+</li>
+<li><strong>进入高级 DNS 设置</strong>：
+<ul>
+<li>点击 &ldquo;Advanced DNS&rdquo; 选项卡，找到 &ldquo;Host records&rdquo; 部分。</li>
+</ul>
+</li>
+<li><strong>添加新的记录</strong>：
+<ul>
+<li>点击 &ldquo;Add New Record&rdquo; 按钮，然后添加以下记录：</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li><strong>A record for @</strong>：指向 <code>185.199.108.153</code>。</li>
+<li><strong>CNAME record for www</strong>：输入你的 gh-pages 网站（例如 <code>username.github.io </code>）。</li>
+<li><strong>其他 A record</strong>：添加三个额外的 A record，每个记录的 IP 地址为 <code>185.199.108.153</code>。</li>
+</ul>
+<h3 id="在-godaddy-上配置-dns-解析">在 GoDaddy 上配置 DNS 解析
+</h3><ol>
+<li><strong>登录 GoDaddy 账户</strong>：
+<ul>
+<li>登录到你的 GoDaddy 账户。</li>
+</ul>
+</li>
+<li><strong>管理域名</strong>：
+<ul>
+<li>在 DNS 管理页面中，找到你的域名并点击管理。</li>
+</ul>
+</li>
+<li><strong>更新 DNS 记录</strong>：
+<ul>
+<li>更新以下记录：</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li><strong>A record</strong>：类型为 &ldquo;A&rdquo;，IP 地址更新为 <code>185.199.108.153</code>。</li>
+<li><strong>CNAME record</strong>：类型为 &ldquo;CNAME&rdquo;，名称为 &ldquo;www&rdquo;，输入你的 gh-pages 网站（例如 <code>username.github.io </code>）。</li>
+<li><strong>其他 A record</strong>：添加三个额外的 A record，每个记录的 IP 地址为 <code>185.199.108.153</code>。</li>
+</ul>
+<h3 id="在-github-上配置自定义域名">在 GitHub 上配置自定义域名
+</h3><ol>
+<li><strong>进入 GitHub 仓库设置</strong>：
+<ul>
+<li>在你的 GitHub 仓库中，点击 &ldquo;Settings&rdquo;，然后滚动到页面底部，找到 &ldquo;GitHub Pages&rdquo; 设置栏。</li>
+</ul>
+</li>
+<li><strong>配置自定义域名</strong>：
+<ul>
+<li>在 &ldquo;Custom domain&rdquo; 输入框中，输入你注册的域名（例如 <code>example.com </code>），然后点击 &ldquo;Save&rdquo;。</li>
+</ul>
+</li>
+<li><strong>验证域名</strong>：
+<ul>
+<li>GitHub 会自动检测并验证你的域名配置。</li>
+</ul>
+</li>
+</ol>
+<h4 id="github-pages-自定义域名设置的详细步骤是什么">GitHub Pages 自定义域名设置的详细步骤是什么？
+</h4><p>GitHub Pages 自定义域名的设置步骤如下：</p>
+<ol>
+<li><strong>准备CNAME文件</strong>：首先，你需要在你的项目根目录下创建一个名为 <code>CNAME</code> 的文件，并将你的自定义域名写入该文件中。例如，如果你的自定义域名是 <code>example.com </code>，则 <code>CNAME</code> 文件的内容应为 <code>example.com </code> 。</li>
+<li><strong>提交CNAME文件到GitHub</strong>：将包含自定义域名的 <code>CNAME</code> 文件提交到你的GitHub仓库中。如果你使用的是默认的 <code>gh-pages</code> 分支来发布页面，GitHub会自动将 <code>CNAME</code> 文件添加到该分支的根目录下 。</li>
+<li><strong>配置DNS记录</strong>：在你的域名提供商处，为你的自定义域名添加两条A记录，分别指向 GitHub Pages 提供的IP地址：192.30.252.153 和 192.30.252.154 。</li>
+<li><strong>设置自定义域名</strong>：
+<ul>
+<li>登录到你的GitHub仓库。</li>
+<li>导航至仓库的设置页面（Settings）。</li>
+<li>在左侧菜单中选择“Pages”选项。</li>
+<li>在“Custom domain”部分，输入你已经配置好的自定义域名，并点击“Save”保存设置。GitHub会自动进行DNS校验，这个过程可能需要一些时间 。</li>
+</ul>
+</li>
+<li><strong>开启HTTPS</strong>：如果需要，可以在保存自定义域名后勾选“Enforce HTTPS”选项，以强制使用HTTPS协议。GitHub会自动为你申请SSL证书，无需手动申请 。</li>
+<li><strong>验证和测试</strong>：完成以上步骤后，你可以通过输入你的自定义域名来访问你的GitHub Pages站点，确保一切正常运行 。</li>
+</ol>
+<h4 id="在-hugo-博客项目中创建和管理-cname-文件的最佳实践是什么">在 Hugo 博客项目中创建和管理 CNAME 文件的最佳实践是什么？
+</h4><p>在Hugo博客项目中创建和管理CNAME文件的最佳实践如下：</p>
+<ol>
+<li><strong>创建CNAME文件</strong>：
+<ul>
+<li>在GitHub仓库的根目录下创建一个名为<code>CNAME</code>的文件。</li>
+<li>打开并编辑该文件，在第一行写入你的域名（不包含http头）。</li>
+</ul>
+</li>
+<li><strong>配置DNS记录</strong>：
+<ul>
+<li>如果使用子域名（如<code>[[www.example.com](https://www.example.com)](https://www.example.com) </code>），只需在DNS中添加一个CNAME记录，指向<code>username.github.io </code>。</li>
+<li>如果使用顶级域名（如<code>example.com </code>），则需要创建DNS A记录，指向GitHub的IP地址（例如：192.30.252.153 和 192.30.252.154）。不过，这种方式较为复杂且存在风险，因为GitHub可能会更改其IP地址。</li>
+</ul>
+</li>
+<li><strong>同步和提交更改</strong>：
+<ul>
+<li>将CNAME文件添加到Git仓库：<code>git add CNAME</code>。</li>
+<li>提交更改：<code>git commit -m &quot;Added CNAME&quot;</code>。</li>
+<li>推送更改到远程仓库：<code>git push</code>。</li>
+</ul>
+</li>
+</ol>
+<h4 id="如何验证自定义域名与-github-pages-的绑定是否成功">如何验证自定义域名与 GitHub Pages 的绑定是否成功？
+</h4><p>要验证自定义域名与 GitHub Pages 的绑定是否成功，可以按照以下步骤进行：</p>
+<ol>
+<li><strong>进入设置页面</strong>：在 GitHub 的任何页面的右上角，点击你的头像，然后选择“Settings”。</li>
+<li><strong>找到 Pages 设置</strong>：在侧边栏的“Code, planning, and automation”部分，点击“Pages”。</li>
+<li><strong>添加域名</strong>：在右侧，点击“Add a domain”。在“添加域名”字段中输入你希望验证的域名，并选择“Add domain”。</li>
+<li><strong>保存设置</strong>：填写完域名后，点击“Save”。GitHub 会自动进行 DNS 检查，如果检查通过，你会看到成功的提示。</li>
+<li><strong>验证域名所有权</strong>：GitHub 会自动验证域名的所有权。你可以通过添加一个名为“TXT”的记录来手动验证域名的所有权。GitHub 提供了一个二级域名和一串字符串，你需要在 DNS 解析中添加这些信息。</li>
+<li><strong>检查设置变化</strong>：进入自己的 GitHub Pages 设置页面，如果以下内容发生变化，就代表绑定成功了。</li>
+</ol>
+<h4 id="如果遇到-dns-解析延迟或绑定失败应如何诊断和解决">如果遇到 DNS 解析延迟或绑定失败，应如何诊断和解决？
+</h4><p>遇到DNS解析延迟或绑定失败时，可以采取以下步骤进行诊断和解决：</p>
+<ol>
+<li><strong>使用nslookup命令进行诊断</strong>：首先，可以通过命令行工具如nslookup来判断DNS解析是否出现故障。在终端中输入nslookup命令并指定域名，观察返回结果中的&quot;Query time&quot;项，以测量DNS解析的延迟。</li>
+<li><strong>检查DNS服务器配置</strong>：确保配置的DNS服务器是合理的，并且网络连接正常。如果DNS解析器处于活动状态但无法解析主机名，可能是由于缺乏有效的WAN连接或网络设备不支持DNSSEC协议。此外，还需要检查防火墙是否定义了DNS服务器并能够访问它们。</li>
+<li><strong>清除本地DNS缓存</strong>：有时，本地DNS缓存可能会导致解析问题。可以尝试清除本地DNS缓存，然后重新进行DNS查询。</li>
+<li><strong>检查HOSTS文件</strong>：在本地计算机中，访问某域名时会首先查看本地系统中的HOSTS文件。如果HOSTS文件中存在错误的解析条目，可能会导致DNS解析失败。因此，需要检查并修正HOSTS文件中的条目。</li>
+<li><strong>更换本地DNS服务器</strong>：如果怀疑是由于DNS劫持或其他运营商问题导致的解析故障，可以尝试更换本地DNS服务器。选择一个可靠的公共DNS服务器（如Google DNS或Cloudflare DNS）可能有助于解决此类问题。</li>
+<li><strong>等待DNS更新生效</strong>：如果最近修改了DNS设置，可能需要等待一段时间（通常为0至72小时）以确保全球范围内的DNS记录更新生效。</li>
+</ol>
 
 </section>
 
@@ -511,34 +565,6 @@
     
 
     
-
-<aside class="related-content--wrapper">
-    <h2 class="section-title">相关文章</h2>
-    <div class="related-content">
-        <div class="flex article-list--tile">
-            
-                
-<article class="has-image">
-    <a href="/p/20230101/">
-        
-        
-            <div class="article-image">
-                
-                    <img src="https://picsum.photos/800/600.webp?random=6b63f77d" loading="lazy" data-key="20230101" data-hash="https://picsum.photos/800/600.webp?random=6b63f77d"/>
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">hugo &#43;githubpages 绑定域名</h2>
-        </div>
-    </a>
-</article>
-
-            
-        </div>
-    </div>
-</aside>
 
      
     
