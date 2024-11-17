@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="零基础也能轻松搭建，WordPress建站秘籍大公开！">
+<meta name="keywords" content="WP无代码建站, 快速上手WordPress"><title>快速上手WordPress：2小时打造专业网站全攻略</title>
+
+<link rel='canonical' href='https://51seagoing.us.kg/p/20230105/'>
+
+<link rel="stylesheet" href="/scss/style.min.ccbe386b102416ed6823e1f56bf2ef711c8e7b9fc21601d3238a04e3f9723ec2.css"><meta property='og:title' content="快速上手WordPress：2小时打造专业网站全攻略">
+<meta property='og:description' content="零基础也能轻松搭建，WordPress建站秘籍大公开！">
+<meta property='og:url' content='https://51seagoing.us.kg/p/20230105/'>
+<meta property='og:site_name' content='51seagoing'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='独立站' /><meta property='article:tag' content='网站搭建攻略' /><meta property='article:published_time' content='2023-01-05T14:12:17&#43;08:00'/><meta property='article:modified_time' content='2023-01-05T14:12:17&#43;08:00'/><meta property='og:image' content='https://picsum.photos/800/600.webp?random=d27db95f' />
+<meta name="twitter:title" content="快速上手WordPress：2小时打造专业网站全攻略">
+<meta name="twitter:description" content="零基础也能轻松搭建，WordPress建站秘籍大公开！"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://picsum.photos/800/600.webp?random=d27db95f' />
+    <link rel="shortcut icon" href="/favicon.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu10382515680522102681.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">51seagoing</a></h1>
+            <h2 class="site-description">闪电风暴过后，一定是那充满蓝天白云，充满碧草繁花的世界。——《天空之城》</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/51seagoing'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://gallery.pages.dev/'
+                        target="_blank"
+                        title="photo"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="24" height="24">
+	<title>camera_photography_imaging_picture_capture_digital_camera_icon_260905-svg</title>
+	<style>
+		.s0 { fill: #000000 } 
+	</style>
+	<path fill-rule="evenodd" class="s0" d="m85.5 82.5h-75c-1.1 0-2.2-0.3-3.2-0.7-1.1-0.4-2-1-2.8-1.8-0.8-0.8-1.4-1.7-1.8-2.8-0.5-1-0.7-2.1-0.7-3.2v-45.3c0-1.1 0.2-2.2 0.6-3.2 0.5-1 1.1-2 1.9-2.8 0.8-0.7 1.7-1.4 2.7-1.8 1.1-0.4 2.2-0.6 3.3-0.7h75c1.1 0.1 2.2 0.3 3.3 0.7 1 0.4 1.9 1.1 2.7 1.8 0.8 0.8 1.4 1.8 1.9 2.8 0.4 1 0.6 2.1 0.6 3.2v45.3c0 1.1-0.2 2.2-0.7 3.2-0.4 1.1-1 2-1.8 2.8-0.8 0.8-1.7 1.4-2.8 1.8-1 0.4-2.1 0.7-3.2 0.7zm-75-60.3q-1.3 0.1-2.5 0.5-1.2 0.5-2.1 1.5-0.9 0.9-1.4 2.1-0.5 1.2-0.5 2.4v45.3q0 1.3 0.5 2.5 0.5 1.2 1.4 2.1 0.9 0.9 2.1 1.4 1.2 0.5 2.5 0.5h75q1.3 0 2.5-0.5 1.2-0.5 2.1-1.4 0.9-0.9 1.4-2.1 0.5-1.2 0.5-2.5v-45.3q0-1.2-0.5-2.4-0.5-1.2-1.4-2.1-0.9-1-2.1-1.5-1.2-0.4-2.5-0.5z"/>
+	<path class="s0" d="m39.3 63.4h-36.3q-0.2 0-0.4 0-0.2-0.1-0.3-0.3-0.1-0.1-0.2-0.3-0.1-0.2-0.1-0.4v-22.1q0-0.2 0.1-0.4 0.1-0.2 0.2-0.3 0.1-0.2 0.3-0.2 0.2-0.1 0.4-0.1h35.3q0.4 0 0.7 0.3 0.2 0.3 0.3 0.7-0.1 0.4-0.3 0.7-0.3 0.3-0.7 0.3h-34.3v20.1h35.3q0.4 0 0.7 0.3 0.2 0.3 0.3 0.7-0.1 0.5-0.3 0.7-0.3 0.3-0.7 0.3z"/>
+	<path fill-rule="evenodd" class="s0" d="m59.1 75.2c-10.3 0-19.4-6.6-22.6-16.3-3.3-9.8 0.1-20.5 8.3-26.6 8.2-6.2 19.5-6.3 27.9-0.5 8.4 5.9 12.1 16.5 9.2 26.4-0.8 2.4-1.9 4.7-3.4 6.8-1.4 2-3.2 3.9-5.2 5.4-2.1 1.5-4.3 2.7-6.8 3.5-2.4 0.8-4.9 1.2-7.4 1.3zm0-45.6c-2.4 0-4.7 0.4-6.9 1.1-2.2 0.7-4.3 1.8-6.1 3.2-1.9 1.4-3.5 3.1-4.9 5-1.3 1.9-2.3 4-3 6.2q-0.5 1.5-0.7 3.1-0.2 1.6-0.2 3.2 0 1.5 0.2 3.1 0.2 1.6 0.7 3.1c1.3 4.5 4.1 8.4 7.9 11.2 3.7 2.8 8.3 4.4 13 4.4 4.7 0 9.2-1.6 13-4.4 3.7-2.8 6.5-6.7 7.8-11.2 1-3.3 1.2-6.7 0.6-10-0.6-3.4-1.9-6.5-4-9.2-2-2.8-4.6-5-7.7-6.5-3-1.5-6.3-2.3-9.7-2.3z"/>
+	<path fill-rule="evenodd" class="s0" d="m59.1 68.1c-1.8 0-3.6-0.3-5.3-0.8-1.7-0.6-3.3-1.4-4.7-2.5-1.5-1.1-2.7-2.4-3.8-3.8-1-1.5-1.8-3.1-2.3-4.8q-0.4-1.2-0.5-2.4-0.2-1.2-0.2-2.4 0-1.3 0.2-2.5 0.1-1.2 0.5-2.3c1-3.5 3.2-6.5 6-8.7 2.9-2.2 6.5-3.3 10.1-3.3 3.6 0 7.1 1.1 10 3.3 2.9 2.2 5 5.2 6 8.7q0.4 1.1 0.6 2.3 0.1 1.2 0.1 2.5 0 1.2-0.1 2.4-0.2 1.2-0.6 2.4c-0.5 1.7-1.3 3.3-2.3 4.8-1 1.4-2.3 2.7-3.7 3.8-1.5 1.1-3.1 1.9-4.8 2.5-1.7 0.5-3.4 0.8-5.2 0.8zm0-31.5q-2.4 0-4.7 0.7-2.2 0.8-4.1 2.2-1.9 1.4-3.3 3.4-1.4 1.9-2.1 4.2-0.3 1-0.5 2.1-0.1 1.1-0.1 2.2 0 1 0.1 2.1 0.2 1.1 0.5 2.1c1.6 5.3 6.1 9.3 11.6 10.3 5.5 1 11.1-1.2 14.4-5.7 3.4-4.5 3.9-10.5 1.4-15.5-2.5-5-7.6-8.1-13.2-8.1z"/>
+	<path class="s0" d="m49.4 49.5q-0.1 0-0.1 0 0 0-0.1 0 0 0 0 0-0.1 0-0.1 0-0.2-0.1-0.4-0.2-0.1-0.2-0.2-0.3-0.1-0.2-0.1-0.4 0-0.2 0-0.4 0.5-1.7 1.6-3.2 1-1.4 2.4-2.5 1.5-1.1 3.2-1.7 1.7-0.5 3.5-0.5 0.4 0 0.7 0.3 0.3 0.3 0.3 0.7 0 0.4-0.3 0.7-0.3 0.3-0.7 0.3-1.5 0-2.9 0.4-1.4 0.5-2.6 1.4-1.2 0.9-2 2.1-0.8 1.2-1.3 2.6 0 0.1-0.1 0.3-0.1 0.1-0.2 0.2-0.2 0.1-0.3 0.1-0.2 0.1-0.3 0.1z"/>
+	<path fill-rule="evenodd" class="s0" d="m41 22.3q-0.1 0-0.2-0.1-0.2 0-0.3-0.1-0.1-0.1-0.2-0.2-0.1-0.1-0.1-0.2-0.1-0.1-0.1-0.3-0.1-0.1 0-0.2 0-0.2 0-0.3 0.1-0.1 0.2-0.3l3.3-4.3q0.4-0.5 0.9-0.9 0.5-0.4 1.1-0.6 0.5-0.3 1.1-0.5 0.7-0.1 1.3-0.1h27q0.6 0 1.2 0.2 0.7 0.1 1.2 0.4 0.6 0.2 1.1 0.6 0.5 0.4 0.8 0.9l3.4 4.3q0.2 0.3 0.2 0.6 0 0.2-0.1 0.5-0.1 0.3-0.4 0.4-0.2 0.2-0.5 0.2zm2-2h36.8l-2.1-2.7q-0.3-0.4-0.6-0.6-0.3-0.3-0.6-0.4-0.4-0.2-0.8-0.3-0.4-0.1-0.8-0.1h-27q-0.3 0-0.7 0.1-0.4 0.1-0.8 0.3-0.3 0.1-0.7 0.4-0.3 0.2-0.5 0.6z"/>
+	<path fill-rule="evenodd" class="s0" d="m23 22.3l-8.7-0.1q-0.2 0-0.4 0-0.2-0.1-0.3-0.2-0.2-0.2-0.2-0.4-0.1-0.2-0.1-0.4v-4.3q0-0.4 0.1-0.7 0.2-0.4 0.5-0.7 0.2-0.3 0.6-0.4 0.4-0.2 0.8-0.2h6.7q0.4 0 0.8 0.2 0.3 0.1 0.6 0.4 0.3 0.3 0.4 0.7 0.2 0.3 0.2 0.7v4.3q0 0.2-0.1 0.4-0.1 0.2-0.2 0.4-0.1 0.1-0.3 0.2-0.2 0-0.4 0zm-7.7-2h6.7v-3.3h-6.7z"/>
+	<path fill-rule="evenodd" class="s0" d="m35.4 22.3l-5.5-0.1q-0.2 0-0.4 0-0.2-0.1-0.4-0.2-0.1-0.2-0.2-0.4 0-0.2 0-0.4v-4.8q0-0.6 0.2-1.1 0.2-0.5 0.6-0.9 0.4-0.4 0.9-0.6 0.5-0.3 1.1-0.3h1.8q0.6 0 1.1 0.3 0.5 0.2 0.9 0.6 0.4 0.4 0.7 0.9 0.2 0.5 0.2 1.1v4.8q0 0.2-0.1 0.4-0.1 0.2-0.2 0.4-0.2 0.1-0.3 0.2-0.2 0-0.4 0zm-4.5-2h3.5v-3.8q0-0.2-0.1-0.3 0-0.2-0.2-0.3-0.1-0.1-0.2-0.2-0.2-0.1-0.4-0.1h-1.8q-0.2 0-0.3 0.1-0.2 0.1-0.3 0.2-0.1 0.1-0.2 0.3 0 0.1-0.1 0.3z"/>
+</svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://x.com/51seagoing'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/20230105/">
+                
+                    <img src="https://picsum.photos/800/600.webp?random=d27db95f" loading="lazy" alt="Featured image of post 快速上手WordPress：2小时打造专业网站全攻略" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/wordpress/" >
+                WordPress
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/20230105/">快速上手WordPress：2小时打造专业网站全攻略</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            零基础也能轻松搭建，WordPress建站秘籍大公开！
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jan 05, 2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>上手WP的痛点在于</p>
+<p>过于丰富的插件生态和超级多的概念</p>
+<p>使他变得臃肿和复杂学习曲线越来越陡峭</p>
+<p>快速入门wordpress 必须记住下面这句话：找对插件，作对配置</p>
+<p><img src="/p/20230105/images/640.webp"
+	width="1080"
+	height="607"
+	srcset="/p/20230105/images/640_hu8882528846223955775.webp 480w, /p/20230105/images/640_hu11033925583459356152.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="427px"
+	
+></p>
+<p><strong>所以本文重点介绍在每个特定的场景应该用什么插件，应该如何配置（大量截图）！建议收藏！</strong></p>
+<p>WP基础概念1分钟</p>
+<p><img src="/p/20230105/images/640-1731824215682-1.webp"
+	width="1080"
+	height="605"
+	srcset="/p/20230105/images/640-1731824215682-1_hu6012796512456087159.webp 480w, /p/20230105/images/640-1731824215682-1_hu8432166642770667497.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="178"
+		data-flex-basis="428px"
+	
+></p>
+<p><strong>需要重点介绍的是theme，page，shortcode：</strong></p>
+<p>theme 主题控制了一个页面的布局 和 视觉的框架（具体视觉是可以调整的）。</p>
+<p>page 对比 post ，是可以动静结合的一个页面，可以穿插所有插件（通过组件 或者 shortcode 整合进页面）。一般我们发布文章都是发布post。</p>
+<p>shortcode 可以被任意的页面任意的插件整合，非常的灵活。大部分好插件都支持生成 shortcode。</p>
+<p>block 为一个页面上的一个局部（包含多个组件widget）</p>
+<p><img src="/p/20230105/images/640-1731824215682-2.webp"
+	width="1080"
+	height="662"
+	srcset="/p/20230105/images/640-1731824215682-2_hu6226658983454853511.webp 480w, /p/20230105/images/640-1731824215682-2_hu13386283647862650006.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="163"
+		data-flex-basis="391px"
+	
+></p>
+<p>进一步进入正题（点题 标题的2小时是以下这些所有环节）：</p>
+<p><img src="/p/20230105/images/640-1731824215682-3.webp"
+	width="1080"
+	height="596"
+	srcset="/p/20230105/images/640-1731824215682-3_hu10814030146003734549.webp 480w, /p/20230105/images/640-1731824215682-3_hu7903225412710049673.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="181"
+		data-flex-basis="434px"
+	
+></p>
+<p>域名 服务器</p>
+<ul>
+<li>域名：nameliso，namecheap，spaceship(首年价格便宜)</li>
+<li>服务器：hostinger  不完美但初期够用
+<ul>
+<li>方便/自动备份/弹性升级/免费邮箱/CDN加速-结合wp插件</li>
+<li>如果资源很多 谨慎选择hostinger-web hosting套餐 他们的硬盘300G 无法升级！</li>
+<li>他的DNS不太行，建议换成其他的如CF 国内访问会块不少（后台编辑体验更高）。</li>
+</ul>
+</li>
+</ul>
+<p><img src="/p/20230105/images/640-1731824215683-4.webp"
+	width="1080"
+	height="607"
+	srcset="/p/20230105/images/640-1731824215683-4_hu10893227661687390718.webp 480w, /p/20230105/images/640-1731824215683-4_hu16208511553729363525.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="427px"
+	
+></p>
+<p><img src="/p/20230105/images/640-1731824215683-5.webp"
+	width="1080"
+	height="601"
+	srcset="/p/20230105/images/640-1731824215683-5_hu16953119596015681352.webp 480w, /p/20230105/images/640-1731824215683-5_hu10128114736724845577.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="179"
+		data-flex-basis="431px"
+	
+></p>
+<p><img src="/p/20230105/images/640-1731824215683-6.webp"
+	width="1080"
+	height="610"
+	srcset="/p/20230105/images/640-1731824215683-6_hu5263677457952818747.webp 480w, /p/20230105/images/640-1731824215683-6_hu12418026012913012135.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="424px"
+	
+></p>
+<p>如果偷懒直接用hostinger的ai服务 其实5分钟就可以生成一个站点，但是为了后期维护方便，使用最具性价比的插件还是建议按照本教程进行安装推荐的插件。</p>
+<p><img src="/p/20230105/images/640-1731824215683-7.webp"
+	width="1080"
+	height="609"
+	srcset="/p/20230105/images/640-1731824215683-7_hu7438973399422398685.webp 480w, /p/20230105/images/640-1731824215683-7_hu11165003419711658104.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="425px"
+	
+></p>
+<p>kadance 是推荐新手用的主体。他有ai建站的流程 点点点一路点就能生成专业美观的插件。</p>
+<p>可以点击查看官方的视频介绍：</p>
+<p>，时长02:15</p>
+<p><strong>如何安全的让tb店主进后台安装？</strong></p>
+<ul>
+<li>用Dologin插件生成登录一次就失效的链接。</li>
+</ul>
+<p><img src="/p/20230105/images/640-1731824215683-8.webp"
+	width="1080"
+	height="418"
+	srcset="/p/20230105/images/640-1731824215683-8_hu13623452953107867957.webp 480w, /p/20230105/images/640-1731824215683-8_hu2104264249593958765.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="258"
+		data-flex-basis="620px"
+	
+></p>
+<p><strong>必须设置 Settings-Permalinks</strong></p>
+<p><img src="/p/20230105/images/640-1731824215684-9.webp"
+	width="1080"
+	height="391"
+	srcset="/p/20230105/images/640-1731824215684-9_hu13988726877783736112.webp 480w, /p/20230105/images/640-1731824215684-9_hu9932646459648006492.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="276"
+		data-flex-basis="662px"
+	
+></p>
+<p>主题的全局样式控制入口</p>
+<p><img src="/p/20230105/images/640-1731824215684-10.webp"
+	width="1080"
+	height="605"
+	srcset="/p/20230105/images/640-1731824215684-10_hu4590993902840710583.webp 480w, /p/20230105/images/640-1731824215684-10_hu1350274181040382571.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="178"
+		data-flex-basis="428px"
+	
+></p>
+<p>开始建站 美化篇</p>
+<ul>
+<li>购买我推荐的套餐之后会有starter templates 入门很合适的模板库</li>
+</ul>
+<p><img src="/p/20230105/images/640-1731824215684-11.webp"
+	width="1080"
+	height="445"
+	srcset="/p/20230105/images/640-1731824215684-11_hu2734806068605024003.webp 480w, /p/20230105/images/640-1731824215684-11_hu8006921643527218975.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="242"
+		data-flex-basis="582px"
+	
+></p>
+<p>这些模板基本够用了，覆盖了大部分的场景：</p>
+<p><img src="/p/20230105/images/640-1731824215684-12.webp"
+	width="1080"
+	height="373"
+	srcset="/p/20230105/images/640-1731824215684-12_hu791505177384215685.webp 480w, /p/20230105/images/640-1731824215684-12_hu7019204676276389384.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="289"
+		data-flex-basis="694px"
+	
+></p>
+<p>软件类的也不少</p>
+<p><img src="/p/20230105/images/640-1731824215684-13.webp"
+	width="1080"
+	height="605"
+	srcset="/p/20230105/images/640-1731824215684-13_hu14605779738773249653.webp 480w, /p/20230105/images/640-1731824215684-13_hu10540689436879053146.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="178"
+		data-flex-basis="428px"
+	
+></p>
+<p>深度定制页面（重点 ，使用elementor）</p>
+<ul>
+<li>网页编辑器 拖拉拽 编辑页面</li>
+<li>Elementor 灵活强大但慢 略有学习门槛 （搭配Elementskit Pro更佳） 查看效果</li>
+<li>Gutenberg WP原生/快/简单 类似编辑公众号</li>
+</ul>
+<p><img src="/p/20230105/images/640-1731824215684-14.webp"
+	width="1080"
+	height="518"
+	srcset="/p/20230105/images/640-1731824215684-14_hu5829268066731104649.webp 480w, /p/20230105/images/640-1731824215684-14_hu6704143524095402466.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="208"
+		data-flex-basis="500px"
+	
+></p>
+<p><img src="/p/20230105/images/640-1731824215684-15.webp"
+	width="1080"
+	height="610"
+	srcset="/p/20230105/images/640-1731824215684-15_hu8461679830253654577.webp 480w, /p/20230105/images/640-1731824215684-15_hu9933787673877178373.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="424px"
+	
+></p>
+<p>最近刚升级。。。</p>
+<p>，时长00:14</p>
+<p>他的缺点是慢，但是比起他带来的效率一开始可以忽略这个缺陷！</p>
+<p>推荐搭配ElementsKit</p>
+<p><img src="/p/20230105/images/640-1731824215684-16.webp"
+	width="1080"
+	height="609"
+	srcset="/p/20230105/images/640-1731824215684-16_hu4718588787467940423.webp 480w, /p/20230105/images/640-1731824215684-16_hu118521755890132788.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="425px"
+	
+></p>
+<p><img src="/p/20230105/images/640-1731824215685-17.webp"
+	width="1080"
+	height="608"
+	srcset="/p/20230105/images/640-1731824215685-17_hu3550402068305404000.webp 480w, /p/20230105/images/640-1731824215685-17_hu1897871220682648312.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+></p>
+<p><img src="/p/20230105/images/640-1731824215685-18.webp"
+	width="1080"
+	height="608"
+	srcset="/p/20230105/images/640-1731824215685-18_hu6383895183668448419.webp 480w, /p/20230105/images/640-1731824215685-18_hu6946506197396795967.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+></p>
+<p><img src="/p/20230105/images/640-1731824215685-19.webp"
+	width="1080"
+	height="605"
+	srcset="/p/20230105/images/640-1731824215685-19_hu726767846664478031.webp 480w, /p/20230105/images/640-1731824215685-19_hu7235433309311742794.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="178"
+		data-flex-basis="428px"
+	
+></p>
+<p><img src="/p/20230105/images/640-1731824215685-20.webp"
+	width="1080"
+	height="607"
+	srcset="/p/20230105/images/640-1731824215685-20_hu6619535575437596258.webp 480w, /p/20230105/images/640-1731824215685-20_hu11246528161613529884.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="427px"
+	
+></p>
+<p><img src="/p/20230105/images/640-1731824215685-21.webp"
+	width="1080"
+	height="608"
+	srcset="/p/20230105/images/640-1731824215685-21_hu6540332495199405770.webp 480w, /p/20230105/images/640-1731824215685-21_hu14882072935033465407.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+></p>
+<p><img src="/p/20230105/images/640-1731824215685-22.webp"
+	width="1080"
+	height="613"
+	srcset="/p/20230105/images/640-1731824215685-22_hu5707204703127718744.webp 480w, /p/20230105/images/640-1731824215685-22_hu983614715304755797.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="176"
+		data-flex-basis="422px"
+	
+></p>
+<p><img src="/p/20230105/images/640-1731824215685-23.webp"
+	width="1080"
+	height="604"
+	srcset="/p/20230105/images/640-1731824215685-23_hu2826033516662312880.webp 480w, /p/20230105/images/640-1731824215685-23_hu16069308443533700548.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="178"
+		data-flex-basis="429px"
+	
+></p>
+<p><img src="/p/20230105/images/640-1731824215685-24.webp"
+	width="1080"
+	height="607"
+	srcset="/p/20230105/images/640-1731824215685-24_hu11830259502489236053.webp 480w, /p/20230105/images/640-1731824215685-24_hu8480182264350131679.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="427px"
+	
+></p>
+<p><img src="/p/20230105/images/640-1731824215685-25.webp"
+	width="1080"
+	height="609"
+	srcset="/p/20230105/images/640-1731824215685-25_hu4146476104652754548.webp 480w, /p/20230105/images/640-1731824215685-25_hu17799337385806983182.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="425px"
+	
+></p>
+<p><img src="/p/20230105/images/640-1731824215685-26.webp"
+	width="1080"
+	height="610"
+	srcset="/p/20230105/images/640-1731824215685-26_hu18155163733202838706.webp 480w, /p/20230105/images/640-1731824215685-26_hu13580290180309148823.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="424px"
+	
+></p>
+<p>多语言的重要性是 能让网站流量快速的在几周内翻3-5倍：<img src="/p/20230105/images/640-1731824215686-27.webp"
+	width="1080"
+	height="720"
+	srcset="/p/20230105/images/640-1731824215686-27_hu14669133260279412178.webp 480w, /p/20230105/images/640-1731824215686-27_hu4192708822303782641.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="150"
+		data-flex-basis="360px"
+	
+></p>
+<p><img src="/p/20230105/images/640-1731824215686-28.webp"
+	width="1080"
+	height="719"
+	srcset="/p/20230105/images/640-1731824215686-28_hu8767618156989272839.webp 480w, /p/20230105/images/640-1731824215686-28_hu8170586614613194424.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="150"
+		data-flex-basis="360px"
+	
+></p>
+<p>多语言 用TranslatePress。</p>
+<p><img src="/p/20230105/images/640-1731824215686-29.webp"
+	width="1080"
+	height="604"
+	srcset="/p/20230105/images/640-1731824215686-29_hu2173864047729540873.webp 480w, /p/20230105/images/640-1731824215686-29_hu16328242900224976358.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="178"
+		data-flex-basis="429px"
+	
+></p>
+<p>速度是用户体验的关键，也是Google 排名算法中，很关键的一点。无代码可以优化到100%。</p>
+<p><img src="/p/20230105/images/640-1731824215686-30.webp"
+	width="1080"
+	height="454"
+	srcset="/p/20230105/images/640-1731824215686-30_hu9011406730254126226.webp 480w, /p/20230105/images/640-1731824215686-30_hu8376164296402772180.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="237"
+		data-flex-basis="570px"
+	
+></p>
+<p>优化需要的插件和配置：</p>
+<ul>
+<li>站点最后删除所有非必要插件</li>
+<li>Imagify or Converter for Media 图片大小优化 Webp</li>
+<li><strong>Litespeed- Cache Cache&amp; CDN打开（和hostinger搭配）</strong></li>
+<li><strong>如果服务器不是hostinger，可以用WP Rocket</strong></li>
+<li><strong>Elementor-Setting-有Peformance标签选项打开</strong></li>
+<li><strong>Index WP MySQL For Speed 启动</strong>high-performance keys</li>
+</ul>
+<p><img src="/p/20230105/images/640-1731824215686-31.webp"
+	width="1080"
+	height="611"
+	srcset="/p/20230105/images/640-1731824215686-31_hu5074332661268968597.webp 480w, /p/20230105/images/640-1731824215686-31_hu291455611629015785.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="176"
+		data-flex-basis="424px"
+	
+></p>
+<p><img src="/p/20230105/images/640-1731824215686-32.webp"
+	width="1080"
+	height="610"
+	srcset="/p/20230105/images/640-1731824215686-32_hu11560080809407523358.webp 480w, /p/20230105/images/640-1731824215686-32_hu11486599982472166867.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="424px"
+	
+></p>
+<p><img src="/p/20230105/images/640-1731824215686-33.webp"
+	width="1080"
+	height="606"
+	srcset="/p/20230105/images/640-1731824215686-33_hu17243446984739785316.webp 480w, /p/20230105/images/640-1731824215686-33_hu4682228882250499981.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="178"
+		data-flex-basis="427px"
+	
+></p>
+<p><img src="/p/20230105/images/640-1731824215686-34.webp"
+	width="1080"
+	height="603"
+	srcset="/p/20230105/images/640-1731824215686-34_hu5193138444503995929.webp 480w, /p/20230105/images/640-1731824215686-34_hu3952887746909509089.webp 1024w"
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="179"
+		data-flex-basis="429px"
+	
+></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section>
+        页面浏览量<span id="busuanzi_value_page_pv">Loading</span>
+    </section>
+</footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <script src="https://utteranc.es/client.js" 
+        repo="orange-blog/blogtalks"
+        issue-term="title"
+        
+        crossorigin="anonymous"
+        async
+        >
+</script>
+
+<style>
+    .utterances {
+        max-width: unset;
+    }
+</style>
+
+<script>
+    let utterancesLoaded = false;
+
+    function setUtterancesTheme(theme) {
+        let utterances = document.querySelector('.utterances iframe');
+        if (utterances) {
+            utterances.contentWindow.postMessage(
+                {
+                    type: 'set-theme',
+                    theme: `github-${theme}`
+                },
+                'https://utteranc.es'
+            );
+        }
+    }
+
+    addEventListener('message', event => {
+        if (event.origin !== 'https://utteranc.es') return;
+
+        
+        utterancesLoaded = true;
+        setUtterancesTheme(document.documentElement.dataset.scheme)
+    });
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (!utterancesLoaded) return;
+        setUtterancesTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2024 51seagoing
+    </section>
+    
+    <section class="powerby">
+        
+            网站总访客数：<span id='busuanzi_value_site_uv'>Loading</span><br/>
+      网站总访问量：<span id='busuanzi_value_site_pv'>Loading</span>
+      <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.27.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<script
+    src="https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/js/nprogress.min.js"
+    integrity="sha384-bHDlAEUFxsRI7JfULv3DTpL2IXbbgn4JHQJibgo5iiXSK6Iu8muwqHANhun74Cqg"
+    crossorigin="anonymous"
+></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/css/nprogress.css"
+    integrity="sha384-KJyhr2syt5+4M9Pz5dipCvTrtvOmLk/olWVdfhAp858UCa64Ia5GFpTN7+G4BWpE"
+    crossorigin="anonymous"
+/>
+<script>
+    NProgress.start();
+    document.addEventListener("readystatechange", () => {
+        if (document.readyState === "interactive") NProgress.inc(0.8);
+        if (document.readyState === "complete") NProgress.done();
+    });
+</script>
+
+<script
+    src="https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/js/ribbon.min.js"
+    integrity="sha384-UEK8ZiP3VgFNP8KnKMKDmd4pAUAOJ59Y2Jo3ED2Z5qKQf6HLHovMxq7Beb9CLPUe"
+    crossorigin="anonymous"
+    size="300"
+    alpha="0.6"
+    zindex="-1"
+    defer
+></script>
+<script defer src="https://cn.vercount.one/js"></script>
+
+    </body>
+</html>
